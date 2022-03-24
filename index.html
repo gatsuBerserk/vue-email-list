@@ -8,7 +8,7 @@
 	    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
 
     <!-- Bootstrap --> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      
     <!--Vue--> 
 	    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
@@ -20,7 +20,16 @@
 </head>
 <body> 
     <main id="app">
+        <section id="mails" class="text-center m-5"> 
+            <h1>Mails</h1> 
+            <button class="btn btn-primary" @click="mail"> Genera Mail</button>
+            <div class="my-list m-5">     
+                <ol> 
+                    <li v-for="(element, index) in mailArray">{{ element }}</li>
+                </ol>
 
+            </div>
+        </section>
     </main>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
