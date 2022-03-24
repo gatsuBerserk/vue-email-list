@@ -22,6 +22,11 @@ const app = new Vue(
                      }) 
                 }
             }
-        },
+        }, 
+        //  Prove varie ed eventuali 
+        // mettiamo in mounted la funzione e l'array e ci evitiamo di fare bottoni e bottoncini :)
+        mounted(){
+            this.mail(this.mailArray)
+        } 
 }) 
 
